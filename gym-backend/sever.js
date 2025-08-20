@@ -8,15 +8,10 @@ const express = require('express');
      app.use(express.json());
 
      app.get('/', (req, res) => {
-       console.log('Ji is good');
-       res.json({ message: 'Fitness App Backend - Free Version' });
-     });
-db.students.insertOne({
-  graduationDate: null,
-  courses: ["Biology", "Chemistry", "Calculus"],
-  address: {
-    street: "123 Fake st.",
-    city: "Bikini Bottom",
-    zip: 12345
-  }
-})
+      console.log('JJ is good');
+      res.json({ message: 'Fitness App Backend - Free Version' });
+    });
+    
+    app.listen(port, () => {
+      console.log(`Server running on port ${port}`);
+    });
