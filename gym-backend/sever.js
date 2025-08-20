@@ -1,22 +1,18 @@
 const express = require('express');
-     const cors = require('cors');
+const cors = require('cors');
 
-     const app = express();
-     const port = process.env.PORT || 3000;
+const app = express();
+const port = process.env.PORT || 3000;
 
-     app.use(cors());
-     app.use(express.json());
+app.use(cors());
+app.use(express.json());
 
-     app.get('/', (req, res) => {
-       console.log('Ji is good');
-       res.json({ message: 'Fitness App Backend - Free Version' });
-     });
-db.students.insertOne({
-  graduationDate: null,
-  courses: ["Biology", "Chemistry", "Calculus"],
-  address: {
-    street: "123 Fake st.",
-    city: "Bikini Bottom",
-    zip: 12345
-  }
-})
+app.get('/', (req, res) => {
+  console.log('Server is running');
+  res.json({ message: 'Fitness App Backend - Free Version' });
+});
+
+// Start the server
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
