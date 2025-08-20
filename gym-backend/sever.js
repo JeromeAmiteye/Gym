@@ -7,12 +7,11 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-app.get('/', (req, res) => {
-  console.log('Server is running');
-  res.json({ message: 'Fitness App Backend - Free Version' });
-});
-
-// Start the server
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
+     app.get('/', (req, res) => {
+      console.log('JJ is good');
+      res.json({ message: 'Fitness App Backend - Free Version' });
+    });
+    
+    app.listen(port, () => {
+      console.log(`Server running on port ${port}`);
+    });
