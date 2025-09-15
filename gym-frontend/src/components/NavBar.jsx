@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function NavBar() {
   return (
     <>
-      <div className="w-[100%]">
+      <div className="fixed w-[100%] bg-white">
         <div className="flex p-3">
           <h2>Fitness App</h2>
           <div className="absolute flex space-x-4 right-2">
