@@ -1,16 +1,28 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import ProtectedRoute from "./components/ProtectedRoute.jsx";
 import Navbar from "./components/NavBar";
+import Home from "./pages/Home";
+// import Dashboard from "./pages/Dashboard";
+import "./index.css";
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<h1>Home</h1>} />
-        <Route path="/about" element={<h1>About Us</h1>} />
-        <Route path="/contact" element={<h1>Contact Us</h1>} />
+        <Route path="/" element={<Home />} />
+        {/* <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <Dashboard />
+            </ProtectedRoute>
+          }
+        /> */}
+        {/* <Route path="/workouts" element={<Workout />} /> */}
+        {/* <Route path="/profile" element={<Profile />} /> */}
+        {/* <Route path="/login" element={<Login />} /> */}
       </Routes>
-      {/* <Footer /> */}
     </Router>
   );
 }

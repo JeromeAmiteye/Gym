@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -22,3 +23,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+/src/pages/Dashboard.jsx
+/src/components/ProtectedRoute.jsx
+/src/components/Sidebar.jsx
